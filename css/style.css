@@ -1,0 +1,1866 @@
+/* Do not change anything here
+    START BASIC STYLE RESET
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* COLORS TO BE USED FOR CONTRAST/ BUTTONS / LINKS */
+
+/* 
+Header Gradient (mix of #2196F3 and #512DAB)
+Footer #757575 
+Outrageous Orange #FF5722 --- accent color, and dark orange for error or warning messages 
+Daisy Bush #512DA8 --- links and buttons 
+ */
+
+/* Do not change anything here
+  END  BASIC STYLE RESET
+*/
+
+/* START BASIC STYLES */
+
+body {
+  background-color: #f5f5f5;
+  line-height: 1.5;
+  font-family: Helvetica, sans-serif;
+  color: #212121;
+}
+
+/* logo-font{font-family: 'Roboto', sans-serif}; */
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+p,
+span {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: underline;
+  color: #0A6AB8;
+}
+
+/*a:link,*/
+a:hover,
+a:active,
+a:focus {
+  color: #0A6AB8;
+  
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Lato", sans-serif;
+  color: #512da8;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+/* END BASIC STYLES */
+/************ |This section is reseved for the main navigation styles| ************/
+
+nav {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  background-image: linear-gradient(to right, #2196f3, #512dab);
+}
+
+.logo {
+  max-width: 281px;
+  min-width: 180px;
+  width: 50vw;
+
+  max-height: 81px;
+  height: 100%;
+}
+
+.menu {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.menu-x {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 40px;
+  height: 40px;
+
+  cursor: pointer;
+  display: none;
+
+  z-index: 1;
+}
+
+.nav-items li a {
+  text-decoration: none;
+  width: 100%;
+
+  color: white;
+  font-weight: bolder;
+}
+
+.sub-nav {
+  position: relative;
+  display: inline-block;
+}
+
+.sub-menu {
+  position: absolute;
+  display: none;
+}
+
+.nav-items a:hover,
+.nav-items a:focus {
+  background-color: white;
+  color: dodgerblue;
+  border: 3px solid black;
+}
+
+.sub-nav:hover .sub-menu,
+.sub-nav:focus-within .sub-menu,
+.sub-nav:active .sub-menu {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
+
+/************ |End of the main navigation styles| ************/
+
+/* *********** CSS for HOME ****************/
+.home-main {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.home-slide {
+  display: none;
+}
+
+.home-slide img {
+  width: 100%;
+}
+
+.home-x-links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.home-x-links img {
+  flex: 0 0 75px;
+  height: 75px;
+}
+
+.home-main img {
+  width: 100%;
+}
+
+.home-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-social p {
+  flex: 0 1 60%;
+}
+
+.home-social a img {
+  width: 75px;
+  height: 75px;
+  padding: 0.5rem;
+}
+.home-skip-nav {
+  position: absolute;
+  left: 10%;
+
+  background-color: orangered;
+  color: white;
+  border: 9px solid black;
+  padding: 1.5rem;
+
+  opacity: 0;
+  z-index: 3;
+}
+
+.home-skip-nav:focus {
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+}
+
+.home-map iframe {
+  width: 100%;
+  height: 35vh;
+  border: 0;
+  margin-bottom: 3rem;
+}
+
+/* *********** CSS for About ****************/
+/* ------------------------------------- start of CSS for About -------------------------------------- */
+
+/************** general styles ***************/
+
+.about {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.about h1,
+.about h2 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.intro {
+  text-transform: uppercase;
+}
+
+.about p {
+  margin-bottom: 2rem;
+  padding: 0 15px;
+}
+
+/************ paragraphs' styles **********/
+
+.frontend-program,
+.about-ftc {
+  background-color: white;
+}
+
+.intro {
+  text-align: center;
+  font-size: small;
+  font-weight: bold;
+}
+
+.frontend-program p,
+.paragraph-wrap p {
+  background-color: #f5f5f5;
+  width: 106%;
+  border: 0.01rem solid #512da8;
+  padding: 10px;
+  margin-left: -3%;
+}
+
+/*************** images styles **************/
+
+.tablet-image {
+  background: url("../images/about/view-of-the-ftc-mobile-bigger.webp")
+    no-repeat center;
+  opacity: 1;
+  width: 100%;
+  height: 30vh;
+}
+
+.about-ftc-image {
+  background: url("../images/about/about-mobile.webp") no-repeat center;
+  width: 420px;
+  height: 280px;
+  margin: auto;
+}
+
+.logos {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+/* ------------------------------------- end of CSS for About -------------------------------------- */
+
+
+/* *********** CSS for Course Information ****************/
+.course-info {
+  padding: 2rem 0;
+}
+
+.course-info section,
+.course-info-financial {
+  padding: 1rem 0;
+  border-bottom: 1px solid #212121;
+}
+
+.course-info .wrapper {
+  width: 96%;
+}
+
+.course-info h1,
+.course-info h2 {
+  text-align: center;
+  line-height: 1.1;
+}
+
+.course-info p {
+  margin: 1rem 0;
+}
+
+.course-info img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.course-info-content-text span,
+.course-modules-content span,
+.course-info-modules span {
+  font-weight: 700;
+}
+
+.course-info-financial {
+  position: relative;
+}
+
+.course-info-financial-container {
+  width: 280px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.course-info-modules h2,
+.course-info-subheading {
+  margin-bottom: 1.5rem;
+}
+
+.course-info-financial-articles {
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  will-change: transform;
+}
+
+.course-info-financial-article {
+  width: 280px;
+}
+
+.course-info-financial .prev-btn,
+.course-info-financial .next-btn {
+  display: block;
+  position: absolute;
+  top: 45%;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #eaeaea;
+  border: none;
+  cursor: pointer;
+  background-color: #512da8;
+  color: #f5f5f5;
+  display: flex;
+}
+
+.course-info-financial .prev-btn svg,
+.course-info-financial .next-btn svg {
+  height: 2rem;
+  width: 2rem;
+  fill: #f5f5f5;
+}
+
+.course-info-financial .prev-btn:active,
+.course-info-financial .next-btn:active {
+  transform: scale(1.1);
+}
+
+.course-info-financial .prev-btn:disabled,
+.course-info-financial .next-btn:disabled {
+  transform: scale(1);
+  opacity: 0.5;
+}
+
+.course-info-financial .prev-btn {
+  left: 1%;
+}
+.course-info-financial .next-btn {
+  right: 1%;
+}
+
+.course-bottom-links a {
+  text-align: center;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.course-bottom-links a:hover {
+  text-decoration: underline;
+}
+
+.course-bottom {
+  padding: 1rem 0;
+}
+
+.course-bottom img {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Styles for accordion */
+.accordion {
+  min-height: 4rem;
+  overflow: hidden;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  border: 0.01rem solid #512da8;
+}
+.accordion-header {
+  background-color: #f5f5f5;
+  user-select: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: 1.2rem;
+  min-height: 4rem;
+  cursor: pointer;
+}
+.accordion-header-span {
+  width: 3rem;
+  margin-left: 1rem;
+}
+.accordion-header-span::before {
+  content: '';
+  width: 1rem;
+  height: 0.01rem;
+  border-top: 0.01rem solid black;
+  display: block;
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.accordion-header-span::after {
+  content: '';
+  width: 0.01rem;
+  height: 1rem;
+  border-left: 0.01rem solid black;
+  display: block;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.47rem;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.accordion-minus::before {
+  border-top: 0.01rem solid #ff5722;
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.accordion-minus::after {
+  transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  border-left: 0.01rem solid #ff5722;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.accordion-body {
+  width: 90vw;
+  margin-top: -400vw;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.accordion-body ul {
+  list-style-type: disc;
+  padding-left: 1rem;
+}
+.accordion-body li {
+  color: #f5f5f5;
+  margin-bottom: 8px;
+}
+.accordion-body li ul {
+  margin-top: 5px;
+}
+.accordion-body li:last-child {
+  margin-bottom: 0;
+}
+.accordion-body li::marker {
+  color: #ff5722;
+}
+.accordion-dropped {
+  height: fit-content;
+  background-color: #512da8;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.accordion-body-active {
+  margin-top: 0;
+  padding: 1rem;
+  width: 100%;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+/* *********** CSS for How to Apply ****************/
+
+/* For Mobile version */
+.hta {
+  min-width: 300px;
+}
+.hta h2 {
+  text-align: center;
+  padding: 0.5em;
+  font-size: 1.8em;
+}
+.hta p {
+  text-align: justify;
+  padding: 0.5em;
+  font-size: 0.9em;
+}
+.hta li {
+  font-size: 0.9em;
+}
+
+/* Button Apply NOW */
+#apply-button {
+  background: url("../images/how-to-apply/apply-now.jpg") no-repeat;
+  width: 305px;
+  height: 115px;
+  background-size: 500px;
+  background-position: 90% 5%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+#apply-button:hover,
+#apply-button:focus,
+#apply-button:active {
+  background-size: 510px;
+  background-position: 90% 5%;
+}
+
+/* According */
+.sh-accord input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.sh-accord {
+  min-width: 300px;
+  margin: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px -2px rgba(33, 33, 33, 0.5);
+}
+.sh-accord-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  background: #512da8;
+  color: #f5f5f5;
+}
+.sh-accord-label::after {
+  content: "\002B";
+  width: 1em;
+  height: 1.5em;
+  text-align: center;
+  transition: all 0.35s;
+  font-size: 1em;
+}
+.sh-accord-content {
+  max-height: 0;
+  padding: 0 1em;
+  background: #f5f5f5;
+  color: #212121;
+  transition: all 0.35s;
+}
+input:checked + .sh-accord-label::after {
+  transform: rotate(360deg);
+  content: "\002D";
+  font-size: 1.5em;
+  color: #ff5722;
+}
+input:checked ~ .sh-accord-content {
+  max-height: 100vh;
+  padding: 1em;
+  border-right: 5px solid #512da8;
+  border-bottom: 5px solid #512da8;
+  border-left: 5px solid #512da8;
+  border-radius: 0 0 5px 5px;
+}
+#sr {
+  min-width: 300px;
+  width: 100%;
+}
+#sl {
+  width: 0;
+}
+#sl-div {
+  height: 0;
+}
+
+/* *********** CSS for Employment Opportunities ****************/
+/* ------------------------------------- start of CSS for Employment Opportunities ----------------- */
+
+/************** general styles ***************/
+
+.employment {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.employment h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.employment p {
+  margin-bottom: 2rem;
+  padding: 0 15px;
+}
+
+/************ paragraphs' styles **********/
+
+.container-inside-opp {
+  background-color: white;
+}
+
+.container-paragraphs {
+  background-color: #f5f5f5;
+  width: 106%;
+  border: 0.01rem solid #512da8;
+  padding: 10px;
+  margin-left: -3%;
+  margin-bottom: 5em;
+}
+
+/*************** images styles **************/
+
+.employment-bottom-image {
+  background: url("../images/employment-opportunity/employment-opportunity-mobile-small.webp")
+    no-repeat center;
+  width: 90vw;
+  height: 220px;
+  margin: auto;
+}
+
+/* ------------------------------------- end of CSS for Employment Opportunities ----------------- */
+
+/* *********** CSS for FAQ ****************/
+
+.faq-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.faq-h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #512da8;
+}
+.faq-h2 {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0 auto 2rem;
+  padding: 0 0.5rem;
+  max-width: 60ch;
+}
+.faq-section-dropdown {
+  min-height: 6rem;
+  margin: 0.5rem;
+  overflow: hidden;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  border: 0.01rem solid #512da8;
+}
+.faq-h2-question {
+  background-color: #f5f5f5;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 0 0.5rem;
+  font-size: 0.8rem;
+  min-height: 6rem;
+  cursor: pointer;
+}
+.faq-h2-span {
+  width: 3rem;
+  margin-left: 1rem;
+}
+.faq-h2-span::before {
+  content: "";
+  width: 1rem;
+  height: 0.01rem;
+  border-top: 0.01rem solid black;
+  display: block;
+  position: absolute;
+  top: 2.9rem;
+  right: 0.98rem;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.faq-h2-span::after {
+  content: "";
+  width: 0.01rem;
+  height: 1rem;
+  border-left: 0.01rem solid black;
+  display: block;
+  position: absolute;
+  bottom: 2.6rem;
+  right: 1.465rem;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.faq-minus::before {
+  border-top: 0.01rem solid #ff5722;
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.faq-minus::after {
+  transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  border-left: 0.01rem solid #ff5722;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.faq-div-answer {
+  margin-top: -100vw;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.faq-div-answer p {
+  font-size: 0.8rem;
+  color: #f5f5f5;
+}
+.faq-div-answer p a {
+  color: #F5F5F5;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.faq-div-answer ul {
+  list-style-type: disc;
+  padding-left: 1rem;
+}
+.faq-div-answer li {
+  font-size: 0.8rem;
+  color: #f5f5f5;
+}
+.faq-div-answer li::marker {
+  color: #ff5722;
+}
+.faq-section-dropdown-dropped {
+  height: fit-content;
+  background-color: #512da8;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.faq-div-active {
+  margin-top: 0;
+  padding: 1rem;
+  width: 100%;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.faq-additional-info {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.faq-additional-info h2 {
+  font-size: 1rem;
+}
+.faq-additional-info a {
+  margin: 1rem 0;
+  color: #512da8;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+.faq-additional-info a:hover {
+  padding: 0 0.5rem;
+  max-width: fit-content;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+
+.faq-additional-info h3 {
+  font-size: 1rem;
+}
+/* *********** CSS for Contact ****************/
+.content-display{
+  margin-top: 2rem;
+}
+
+.contact-h1{
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #512DA8;
+  color: #fff;
+  border-radius: 5px;
+  width: 100%;
+}
+.contact-form{
+  padding: 2rem;
+}
+.contact-form input,
+.contact-form textarea{
+  margin: .5rem 0 1rem 0;
+  font-size: 1.2rem;
+  height: 2.2rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 15px;
+  transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+  outline: 2px solid #512DA8;
+}
+
+.contact-form textarea{
+  height: 6rem;
+}
+
+.submit-btn{
+  align-self: flex-end;
+  
+}
+input.form-btn {
+  height: 70px;
+  background-color: #FF5722;
+  color: #Fff;
+  padding: 1.2rem 3rem;
+  font-size: 1.5rem;
+  margin: 1rem;
+  border: none; 
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  
+}
+
+.form-btn:hover{
+  outline: 2px solid #FF5722;
+  background-color: #F5F5F5;
+  color: #212121;
+  transition: 0.4s;
+}
+
+.contact-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  margin: 1rem 1rem 0 1rem ;
+}
+
+.contact-info img{
+  margin: 1rem 0;
+  height: auto;
+  width: 100%;
+}
+
+.contact-map{
+  height: 50vh;
+  width: 100%;
+  padding: 2rem 2rem;
+}
+
+/* *********** CSS for Entry Requirements ****************/
+
+/* For Mobile version */
+/* Main content */
+.er {
+  min-width: 300px;
+}
+.er .sh-accord {
+  min-width: 250px;
+}
+#er-h2 {
+  text-align: center;
+  padding: 0.5em;
+  font-size: 1.8em;
+  margin-bottom: -1.75em;
+}
+.er p {
+  text-align: justify;
+  padding: 0.5em;
+  font-size: 0.9em;
+}
+.er-links div p {
+  text-align: center;
+}
+.er li {
+  font-size: 0.9em;
+}
+#er-img-header,
+.er-img {
+  width: 0;
+}
+#er-main-img,
+.er-img-content {
+  height: 0;
+}
+.er-ul {
+  list-style: inside;
+}
+
+/* Links */
+.er-links div {
+  display: flex;
+  justify-content: space-between;
+}
+.er-links div p {
+  margin: auto;
+  width: 140px;
+}
+/* .er-links div p a {
+  color: #ff5722;
+  font-weight: bold;
+}
+.er-links div p a:hover,
+.er-links div p a:focus,
+.er-links div p a:active {
+  font-size: 110%;
+  text-shadow: 1px 1px 1px #ff5722;
+} */
+.er-links img {
+  width: 150px;
+}
+#er-link-2 {
+  flex-direction: row-reverse;
+}
+
+/* *********** CSS for Certifications ****************/
+
+.certification,
+.certification-heading {
+  padding: 10px;
+}
+.certification-heading img {
+  display: block;
+
+  height: auto;
+  margin: 0 auto;
+}
+.certification ul {
+  list-style: disc;
+  padding-left: 15px;
+}
+
+.certification p,
+ul {
+  padding-bottom: 10px;
+}
+
+.certification-type {
+  font-weight: bold;
+}
+
+/* .certification-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+.certification-heading h1 {
+  text-align: center;
+  margin: 0 auto 1rem;
+}
+.certification-heading p {
+  max-width: 70ch;
+  margin-inline: auto;
+}
+.certifications-info {
+  margin-bottom: 20px;
+}
+
+/* .certification-image {
+	flex-basis: 20%;
+	display: none;
+  } */
+
+.certification-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* *********** CSS for Footer ****************/
+footer {
+  background-color: #212121;
+  color: #f5f5f5;
+  padding: 1.5rem 0;
+}
+
+footer .footer-row {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.footer-column {
+  margin-bottom: 1rem;
+}
+
+.footer-column a {
+  color: inherit;
+  transition: color 0.2s;
+}
+
+.footer-column a:hover,
+.footer-column a:focus {
+  color: #2196f3;
+}
+
+.copy {
+  text-align: center;
+  padding: 0 0.5rem;
+}
+
+footer img {
+  width: 200px;
+  height: auto;
+  background-color: #f5f5f5;
+}
+
+address {
+  font: inherit;
+}
+
+footer ul li,
+address p {
+  margin-bottom: 5px;
+}
+
+address p:last-child,
+footer ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* ------->>>>>>   MEDIA QUERIES   <<<<<-------- */
+
+@media screen and (min-width: 460px) {
+  /* *********** CSS for Course Information ****************/
+  .course-info-financial-container {
+    width: 420px;
+  }
+
+  .course-info-financial-article {
+    width: 420px;
+  }
+
+  .course-info-aim-text {
+    order: 0;
+  }
+
+  .course-bottom-links {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+  }
+
+  .course-bottom-links a {
+    margin-bottom: 0;
+  }
+
+  /* Footer styles */
+  .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer-column {
+    flex-basis: 50%;
+  }
+}
+
+/* ------------->>> start of extra media query for About page <<<<---------------- */
+@media (max-width: 469px) {
+  /*************** images styles **************/
+
+  .about-ftc-image {
+    background: url("../images/about/about-mobile-small.webp") no-repeat center;
+    width: 90vw;
+    height: 220px;
+    margin: auto;
+  }
+}
+
+/* -------------->>> end of extra media query for About page <<<<----------------- */
+
+/* Start Tablet */
+
+/******************************** Footer Style Media Query **********************/
+@media screen and (min-width: 460px) {
+  .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer-column {
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  /************** nav fix ****/
+  .sub-nav:hover ul{
+    margin-top: -2rem;
+  }
+  /**************** FAQ *********************/
+ 
+  .faq-h1 {
+    font-size: 2rem;
+  }
+  .faq-h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .faq-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .faq-section-dropdown {
+    min-height: 5rem;
+    margin: 0.5rem;
+    transition: all 0.5s;
+  }
+  .faq-h2-question {
+    padding: 0 0 0.2rem 0.5rem;
+    font-size: 1rem;
+    min-height: 5rem;
+  }
+
+  .faq-h2-span::before {
+    content: "";
+    width: 1rem;
+    height: 0.01rem;
+    border-top: 0.01rem solid black;
+    display: block;
+    position: absolute;
+    top: 2.3rem;
+    right: 0.98rem;
+    transition: all 0.5s;
+  }
+  .faq-h2-span::after {
+    content: "";
+    width: 0.01rem;
+    height: 1rem;
+    border-left: 0.01rem solid black;
+    display: block;
+    position: absolute;
+    bottom: 2.15rem;
+    right: 1.465rem;
+    transition: all 0.5s;
+  }
+  .faq-minus::before {
+    border-top: 0.01rem solid #ff5722;
+  }
+  .faq-minus::after {
+    border-left: 0.01rem solid #ff5722;
+  }
+
+  .faq-div-answer p {
+    font-size: 1rem;
+  }
+
+  .faq-div-answer li {
+    font-size: 1rem;
+  }
+
+  .faq-section-dropdown-dropped {
+    height: fit-content;
+    background-color: #512da8;
+  }
+
+  .faq-div-active {
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  .faq-additional-info {
+    display: flex;
+    flex-direction: column;
+    max-width: 80vw;
+    margin: 1rem auto;
+  }
+  .faq-additional-info h2 {
+    font-size: 1.5rem;
+  }
+  .faq-additional-info a {
+    font-size: 1.2rem;
+  }
+  .faq-additional-info h3 {
+    font-size: 1.3rem;
+  }
+  /************** FAQ ends here ***********/
+
+  /**************** Certifications starts here ************/
+
+  /* Certification Style */
+  .certification-group1,
+  .certification-group2 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .certification {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .certification-group1 .certifications-info,
+  .certification-group2 .certifications-info {
+    width: 50%;
+    padding: 20px;
+  }
+
+  .certification-group3 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .certification-group3 .certifications-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+  }
+
+  /* ------------------------------------- start of tablet-CSS for About -------------------------------------- */
+
+  /************** paragraphs' tablet styles ***************/
+
+  .frontend-program {
+    background: url("../images/about/training-center-desk.webp") no-repeat
+      center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: white;
+    background-position: 120% 50%;
+  }
+
+  .paragraph-wrap p {
+    width: 55%;
+    min-width: 430px;
+  }
+
+  .frontend-program p {
+    margin-left: -15px;
+  }
+
+  .paragraph-wrap-bottom p {
+    float: right;
+  }
+
+  .frontend-program p,
+  .paragraph-wrap p {
+    background-color: #f5f5f5;
+    border: 0.01rem solid #512da8;
+    padding: 10px;
+    margin-right: -15px;
+  }
+
+  /*************** images tablet styles **************/
+
+  .about-ftc-image {
+    /* hiding "about-mobile" and "about-mobile-small" images from tablet and desktop versions */
+    background: none;
+    height: 0;
+    width: 0;
+  }
+
+  .about-ftc {
+    background: url("../images/about/about-tablet-desktop.webp") no-repeat
+      center;
+    width: 100%;
+    height: 334px;
+    margin: 35px auto;
+    background-position: 0% 50%;
+    background-color: white;
+  }
+
+  .tablet-image {
+    background: url("../images/about/view-of-the-ftc-tablet.webp") no-repeat
+      center;
+    width: 100%;
+    height: 48vh;
+  }
+
+  /* ------------------------------------- end of tablet-CSS for About -------------------------------------- */
+
+  /* ------------------------------------- start of tablet-CSS for Employment Opportunety  ------------------ */
+
+  /************** general styles ***************/
+
+  .employment h1 {
+    font-size: 2.5rem;
+    margin-top: 1.3em;
+    margin-bottom: 1.6em;
+  }
+
+  /************ paragraphs' styles **********/
+
+  .container-paragraphs {
+    background-color: transparent;
+    width: 55%;
+    border: none;
+    padding: 0;
+    margin-left: 0;
+    float: right;
+  }
+
+  .container-paragraphs p {
+    background-color: #f5f5f5;
+    min-width: 400px;
+    border: 0.01rem solid #512da8;
+    padding: 10px;
+    margin-right: -3%;
+  }
+
+  /*************** images styles **************/
+
+  .employment-bottom-image {
+    display: none;
+  }
+
+  .container-inside-opp {
+    background: url("../images/employment-opportunity/employment-opportunity-tablet-small.webp")
+      no-repeat center;
+    width: 100%;
+    height: 889px;
+    margin: 0;
+    background-position: 10% 1%;
+    background-color: white;
+  }
+
+  /* ------------------------------------- start of tablet-CSS for Employment Opportunety  ------------------ */
+
+  /***********************  Contact ********************/
+
+  /* CSS for Contact */
+  .content-display {
+    display: flex;
+  }
+  .form-container{
+    min-width: 50%;
+  }
+  .contact-map{
+    height: 70vh;
+    padding: 8rem ;
+  }
+  .contact-info img{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* *********** CSS for Course Information ****************/
+  .course-info-row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .course-info section,
+  .course-info-financial {
+    padding: 2rem 5%;
+  }
+
+  .course-info-header-text,
+  .course-info-aim-text,
+  .course-info-content-text,
+  .course-info-financial-text {
+    padding: 0 2vw;
+  }
+
+  .course-info-header-text,
+  .course-info-aim img,
+  .course-info-content-image {
+    width: 40%;
+  }
+
+  .course-info-header-text h1 {
+    text-align: left;
+  }
+
+  .course-info-header img,
+  .course-info-aim-text,
+  .course-info-content-text {
+    width: 50%;
+  }
+
+  .course-info-aim-text {
+    order: 1;
+  }
+
+  .course-info-financial-container {
+    width: 100%;
+    overflow: visible;
+  }
+
+  .course-info-financial-articles {
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .course-info-financial-article {
+    display: block;
+    width: 30%;
+  }
+
+  .course-info-financial .prev-btn,
+  .course-info-financial .next-btn {
+    display: none;
+  }
+
+  .course-info-financial-article h2 {
+    font-size: 1.3rem;
+  }
+
+  .course-bottom {
+    padding: 2rem 0;
+  }
+
+  /***************** Entry requirements **********/
+
+    /* Main content */
+    .content-1,
+    .content-2,
+    .content-3 {
+      display: flex;
+      justify-content: space-between;
+    }
+    .content-2 {
+      flex-direction: row-reverse;
+    }
+    .row-size {
+      flex-basis: 48%;
+      margin: auto 0;
+    }
+    .er-img {
+      width: 18.75em;
+      margin: 0 auto;
+    }
+    .er-img-content {
+      height: auto;
+      flex-basis: 48%;
+      text-align: center;
+    }
+    #er-h2 {
+      padding: 0.6em;
+      font-size: 2em;
+    }
+    .er p {
+      padding: 0.6em;
+      font-size: 1em;
+    }
+    .er li {
+      font-size: 1em;
+    }
+  
+    /* Links */
+    .er-links {
+      height: 2em;
+      border-top: 1px solid #212121;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      padding: 1em 0.6em 1.7em 0.6em;
+      display: flex;
+      justify-content: space-around;
+    }
+    .er-links p img,
+    .img-links {
+      width: 0;
+    }
+    #er-link-2 {
+      flex-direction: row;
+    }
+    .er-links div .link-href {
+      width: 250px;
+      height: 2em;
+    }
+    .er-links div p {
+      padding: 0;
+      text-align: center;
+      width: 0;
+    }
+    .er-links div p {
+      margin: 0;
+    }
+
+  /* ************* How to apply ***************/
+  .row-1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  .row-1-size {
+    flex-basis: 48%;
+    margin: auto 0;
+  }
+  .row-2 {
+    display: flex;
+  }
+  #sl {
+    width: 100%;
+  }
+  #sl-div {
+    height: auto;
+  }
+  .row-2-size {
+    flex-basis: 48%;
+    margin: auto 0;
+  }
+  .hta h2 {
+    padding: 0.6em;
+    font-size: 2em;
+  }
+  .hta p {
+    padding: 0.6em;
+    font-size: 1em;
+  }
+  .hta li {
+    font-size: 1em;
+  }
+}
+
+
+/* End Tablet */
+
+/* Start Desktop */
+/****************** Footer *******************/
+@media screen and (min-width: 960px) {
+  .footer-column {
+    flex-basis: 25%;
+  }
+
+    /* *********** CSS for Course Information ****************/
+    .course-info-financial-articles {
+      display: block;
+    }
+  
+    .course-info-financial-article {
+      display: flex;
+      width: 100%;
+    }
+  
+    .course-info-financial-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .course-info-financial-article:nth-child(2) img {
+      order: 1;
+    }
+  
+    .course-info-financial-article img,
+    .course-info-financial-text {
+      width: 40%;
+    }
+  
+    /* Footer styles */
+    .footer-column {
+      flex-basis: 25%;
+    }
+}
+
+/************ Media query for the main navigation ************/
+
+@media screen and (max-width: 1024px) {
+  .header-md {
+    height: 50vh;
+  }
+
+  .header-lg {
+    height: 65vh;
+  }
+  nav {
+    position: relative;
+    height: 9vh;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
+  }
+
+  .nav-items {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    background-image: linear-gradient(to right, #2196f3, #512dab);
+
+    list-style-type: none;
+    display: none;
+  }
+
+  .nav-items li {
+    position: relative;
+    border-bottom: 1px solid black;
+    flex: 1 1 100%;
+    height: 100%;
+  }
+
+  .nav-items li a {
+    display: inline-block;
+
+    font-size: 1.5rem;
+    padding: 0.5rem 2rem;
+  }
+
+  .sub-nav-area {
+    aspect-ratio: 3/2;
+  }
+
+  .sub-menu {
+    bottom: 10%;
+    right: 0;
+  }
+
+  .sub-menu-arrow {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    color: white;
+    font-size: 2rem;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu,
+  .menu-x,
+  .sub-menu-arrow {
+    display: none;
+  }
+
+  .nav-items {
+    display: flex;
+  }
+
+  .nav-items li {
+    flex: 1 1 10vw;
+  }
+
+  .nav-items li a {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem;
+  }
+
+  .sub-menu {
+    top: 10vh;
+    right: -1rem;
+    padding: 0.5rem;
+
+    background-image: linear-gradient(to right, #2196f3, #512dab);
+  }
+}
+
+/************ End of Media query for the main navigation ************/
+
+@media (min-width: 1366px) {
+  /* Certification style starts here  */
+  .certifications {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* ------------------------------------- start of desktop-CSS for About  ------------------------------------ */
+
+  /*************** images desktop styles **************/
+  .desktop-image {
+    background: url("../images/about/view-of-the-ftc-desktop.webp") no-repeat
+      center;
+    width: 100%;
+    height: 431px;
+  }
+
+  .tablet-image {
+    background: none;
+    height: 0;
+  }
+
+  /* ------------------------------------- end of desktop-CSS for About  -------------------------------------- */
+
+  /* ------------------------------------- start of desktop-CSS for Employment Opportunety  ------------------ */
+
+  /*************** images desktop styles **************/
+
+  .container-inside-opp {
+    background: url("../images/employment-opportunity/employment-opportunity-tablet.webp")
+      no-repeat center;
+    height: 750px;
+    background-position: 10% 1%;
+    background-color: white;
+  }
+
+  /* ------------------------------------- end of desktop-CSS for Employment Opportunety  --------------------- */
+
+  /*************** entry requirements*****************/
+
+   /* Main content */
+   #er-h2 {
+    padding: 0.7em;
+    font-size: 2.2em;
+    margin: auto 0;
+  }
+  .er p {
+    padding: 0.7em;
+    font-size: 1.1em;
+  }
+  .er li {
+    font-size: 1.1em;
+  }
+  .content-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #212121;
+  }
+  #er-main-img,
+  .er-img {
+    width: 28.125em;
+    height: auto;
+  }
+  #er-img-header {
+    width: auto;
+  }
+
+  /**************** How to apply ****************/
+  .hta h2 {
+    padding: 0.7em;
+    font-size: 2.2em;
+  }
+  .hta p {
+    padding: 0.7em;
+    font-size: 1.1em;
+  }
+  .hta li {
+    font-size: 1.1em;
+  }
+}
+
+/* End Desktop */
+
+/* End MEDIA QUERIES */
